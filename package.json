@@ -2,7 +2,11 @@
 	"name": "my-lowdb",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "dist",
+	"types": "dist",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"prepare": "npm run build",
 		"start": "npm run build && node dist/index.js",
