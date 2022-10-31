@@ -1,0 +1,24 @@
+{
+	"name": "my-lowdb",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "npm run build",
+		"start": "npm run build && node dist/index.js",
+		"dev": "nodemon --watch src --ext js,ts --exec node --no-warnings --loader ts-node/esm src/index.ts",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^18.11.8",
+		"nodemon": "^2.0.20",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"@commonify/lowdb": "^3.0.0"
+	}
+}
